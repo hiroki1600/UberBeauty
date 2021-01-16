@@ -1,3 +1,9 @@
+<%= render "shared/header" %>
+
+テスト
+
+<div calss='main'>
+
 <%# アイテム一覧表示 %>
 <% @items.each do |item| %>
   <li class='list'>
@@ -16,3 +22,7 @@
     <% end %>
   </li>
 <% end %>
+
+</main>
+
+<%= render "shared/footer" %>
