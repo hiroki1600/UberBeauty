@@ -1,0 +1,112 @@
+.top-page-header {
+  width: 100％;
+  padding: 2vh 5vw;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.top-theme {
+  text-align: center;
+  position: relative;
+  color: #6eb0f9;
+  line-height: 1.4;
+  -webkit-box-reflect: below -10px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0) 10%,rgba(0, 0, 0, 0.6));
+}
+
+.logo-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-page-logo {
+
+}
+
+.logo {
+  position: relative;
+  color:  #6eb0f9;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.logo:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #6eb0f9;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.nav {
+  
+}
+
+.lists-right li {
+  list-style: none;
+}
+
+.user-nickname {
+
+}
+
+.logout {
+
+}
+
+.login {
+
+}
+
+.login {
+
+}
+
+.sign-up {
+
+}
+
+.icon-beginner {
+	position: relative;
+	display: inline-block;
+	width: 1em;
+	height: 1.2em;
+	vertical-align: middle;
+	margin-right: .4em;
+}
+.icon-beginner::before,
+.icon-beginner::after {
+	position: absolute;
+	top: 0;
+	content: "";
+	display: block;
+	width: 50%;
+	height: 100%;
+	border: .1em solid #333;
+	border-bottom-width: .15em;
+	box-sizing: border-box;
+}
+.icon-beginner::before {
+	left: 0;
+	background: #ff0;
+	transform: skewY(45deg);
+	border-radius: .3em 0 0 .1em;
+	border-right: none;
+}
+.icon-beginner::after {
+	right: 0;
+	background: #390;
+	transform: skewY(-45deg);
+	border-radius: 0 .3em .1em 0;
+	border-left: none
+}
