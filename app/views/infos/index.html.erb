@@ -1,0 +1,30 @@
+<%= render "shared/header" %>
+
+<div class="top-pages">
+
+  <%# left-infomations %>
+
+  <div class='left-wrapper'>
+    <div class="left-infos">
+      <ul>
+        <li><%= link_to '新着一覧', items_path, class: "letf-info" %></li>
+        <li><%= link_to 'フォロー中', "#", class: "letf-info" %></li>
+        <li><%= link_to '検索', "#", class: "letf-info" %></li>
+        <li><%= link_to 'アカウント管理', "#", class: "letf-info" %></li>
+        <li><%= link_to '投稿する', "#", class: "letf-info" %></li>
+      </ul>
+    </div>
+  </div>
+
+  <%# right-infomations %>
+
+  <div class="right-wrapper">
+    <div class="right-infos">
+      テスト
+    </div>
+  </div>
+
+</div>
+
+
+<%= render "shared/footer" %>
