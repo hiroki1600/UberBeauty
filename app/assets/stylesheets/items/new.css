@@ -1,0 +1,60 @@
+.items-sell-contents {
+  width: 100vw;
+  text-align: center;
+  margin: 20px;
+}
+
+.items-sell-header {
+  padding: 50px;
+}
+
+.header-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell-btn-contents {
+  font-size: large;
+}
+
+.sell-btn {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+}
+
+.sell-btn:hover {
+  color:black;
+  background:aqua;
+}
+
+.items-sell-main {
+  display: flex;
+}
+
+/* 左、説明と画像 */
+.left-contents {
+  width: 60%;
+}
+
+.explains {
+  padding:70px, 70px, 20px, 70px;
+}
+.explain {
+  font-size: 20px;
+}
+
+.items-text {
+  width: 90%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+
+/* 右、料金 */
+.right-contents {
+  width:40%;
+}
