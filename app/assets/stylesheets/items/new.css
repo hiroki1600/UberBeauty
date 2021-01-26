@@ -58,3 +58,13 @@
 .right-contents {
   width:40%;
 }
+
+.sell-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-content {
+  margin: 50px;
+}
