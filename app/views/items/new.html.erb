@@ -40,8 +40,11 @@
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, id:"item-image" %>
+        <%= f.file_field :images, name: 'message[images][]', id:"item-image" %>
       </div>
+      <% @item.images.each do |image| %>
+        <%= image_tag image, class: 'images' %>
+      <% end %>
       <%# /画像アップロード %>
     </div>
 
