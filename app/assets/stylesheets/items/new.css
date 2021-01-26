@@ -1,11 +1,10 @@
 .items-sell-contents {
   width: 100vw;
   text-align: center;
-  margin: 20px;
 }
 
 .items-sell-header {
-  padding: 50px;
+  padding: 70px;
 }
 
 .header-contents {
@@ -18,18 +17,32 @@
 }
 
 .sell-btn {
-  border: 2px solid #000;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
   border-radius: 0;
-  background: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
+  background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
+  background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
 
 .sell-btn:hover {
-  color:black;
-  background:aqua;
+  -webkit-transform: skew(0);
+  transform: skew(0);
+  color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
 }
 
 .items-sell-main {
   display: flex;
+  padding: 8px;
+}
+
+.border-top {
+  border-bottom : solid 3px cyan;
 }
 
 /* 左、説明と画像 */
@@ -63,8 +76,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 15px;
 }
 
 .price-content {
-  margin: 50px;
+  margin: 25px;
+}
+
+.point-box {
+  margin: 2em 0;
+  background: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+.point-box .box-title {
+  font-size: 1.2em;
+  background: #5fc2f5;
+  padding: 4px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.point-box p {
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.border-bottom {
+  border-top: solid 3px cyan;
 }
