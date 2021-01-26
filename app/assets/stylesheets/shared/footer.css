@@ -1,0 +1,57 @@
+.footer {
+    width: 100％;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-kitei {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-page-logo {
+
+}
+
+.logo {
+  position: relative;
+  color:  #6eb0f9;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.logo:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #6eb0f9;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.footer-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.uberbeauty-details {
+
+}
+
+.footer-content-head {
+  padding: 0px 10px;
+}
+
+.footer-link {
+
+}
