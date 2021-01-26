@@ -1,0 +1,101 @@
+
+<div class="items-sell-contents">
+
+  <%= form_with model: @item, local: true do |f| %>
+
+  <header class="items-sell-header">
+    <div class="header-contents">
+      <%# ロゴ %>
+        <div class='top-page-logo'>
+          <%= link_to 'Uber Beauty', "/", class:"logo" %>
+        </div>
+        <%# /ロゴ %>
+
+        <%# 投稿ボタン %>
+        <div class="sell-btn-contents">
+          <%= f.submit "投稿する" ,class:"sell-btn" %>
+          <%=link_to 'もどる', root_path, class:"back-btn" %>
+        </div>
+        <%# /投稿ボタン %>
+    </div>
+  </header>
+
+  <div class="border-top"></div>
+  
+  <%# 投稿画面 %>
+  <div class="items-sell-main">
+
+    <div class="left-contents">
+      <%# 説明文 %>
+      <div class="explains">
+        <div class="explain">説明文</div>
+        <div class="explain-sentence">
+          <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"説明文（必須 1,000文字まで）（仕上がり方、注意点など)", rows:"7" ,maxlength:"1000" %>
+        </div>
+      </div>
+      <%# /説明文 %>
+
+      <%# 画像アップロード %>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <div id="image-list" ></div>
+        <%= f.file_field :images, name: 'message[images][]', id:"item-image" %>
+      </div>
+      <% @item.images.each do |image| %>
+        <%= image_tag image, class: 'images' %>
+      <% end %>
+      
+      <%# /画像アップロード %>
+    </div>
+
+    <div class="right-contents">
+
+      <%# 料金、利益 %>
+      <div class="sell-price">
+        <div class="weight-bold-text question-text">
+          <span>利用料金<br>(¥1000〜50000)</span>
+        </div>
+        <div>
+          <div class="price-content">
+            <div class="price-text">
+              <span>料金</span>
+              <span class="indispensable">必須</span>
+            </div>
+            <span class="sell-yen">¥</span>
+            <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）5000" %>
+          </div>
+          <div class="price-content">
+            <span>手数料 (15%)</span>
+            <span>
+              <span id='add-tax-price'></span>円
+            </span>
+          </div>
+          <div class="price-content">
+            <span>利益</span>
+            <span>
+              <span id='profit'></span>円
+          </div>
+          </span>
+        </div>
+        <div class="point">
+          <div class="point-box">
+            <div class="box-title">✔︎POINT</div>
+            <p>説明文はできるだけ詳細に記入</p>
+            <p>画像は3枚以上</p>
+          </div>
+        </div>
+      </div>
+      <%# /料金、利益 %>
+
+    </div>
+
+  </div>
+
+  <% end %>
+
+</div>
+
+<div class="border-bottom"></div>
+<%= render "shared/footer" %>
