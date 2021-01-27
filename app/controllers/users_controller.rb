@@ -11,7 +11,6 @@ class UsersController < ApplicationController
     @user = current_user
     if current_user.update(user_params)
       sign_in(@user, :bypass => true)
-      redirect_to root_path
     else
       render :edit
     end

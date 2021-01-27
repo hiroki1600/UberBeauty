@@ -1,0 +1,13 @@
+.success-top {
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+}
+
+.success {
+  margin-top: 55px;
+}
+
+.success h2 {
+  padding-bottom: 15px;
+}
