@@ -26,6 +26,15 @@
   <div class="items-sell-main">
 
     <div class="left-contents">
+
+      <%# タイトル %>
+      <div class="title">
+        <div class="title-mozi">タイトル</div>
+        <div>
+        <%= f.text_area :name, class:"title-text", id:"title-name", placeholder:"タイトル（必須 50文字まで)", maxlength:"50" %>
+        </div>
+      </div>
+
       <%# 説明文 %>
       <div class="explains">
         <div class="explain">説明文</div>
