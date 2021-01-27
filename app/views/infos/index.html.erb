@@ -8,10 +8,12 @@
     <div class="left-infos">
       <ul>
         <li><%= link_to '新着一覧', items_path, class: "letf-info" %></li>
-        <li><%= link_to 'フォロー中', "#", class: "letf-info" %></li>
         <li><%= link_to '検索', "#", class: "letf-info" %></li>
-        <li><%= link_to 'アカウント管理', "#", class: "letf-info" %></li>
+        <% if user_signed_in? %>
+        <li><%= link_to 'フォロー中', "#", class: "letf-info" %></li>
+        <li><%= link_to 'アカウント情報変更', edit_user_path(current_user.id), class: "letf-info" %></li>
         <li><%= link_to '投稿する', new_item_path(current_user.id), class: "letf-info" %></li>
+        <% end %>
       </ul>
     </div>
   </div>
