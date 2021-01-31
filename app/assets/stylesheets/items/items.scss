@@ -1,7 +1,17 @@
-.list {
-  width: 37vh;
+.main {
+  width: 100vw;
+}
+
+.item-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-index-list {
+  width: 25vh;
   padding: 1vw;
   background-color: #FFF;
+  list-style: none;
 }
 
 .item-img-content {
@@ -27,4 +37,9 @@
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
+}
+
+.images {
+  width: 130px;
+  height: 130px;
 }

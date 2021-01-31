@@ -1,4 +1,4 @@
-if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
+if (document.URL.match( /new/ ) || document.URL.match( /index/ )) {
   document.addEventListener('DOMContentLoaded', function(){
     const ImageList = document.getElementById('image-list');
     document.getElementById('item-image').addEventListener('change', function(e){
@@ -13,7 +13,7 @@ if (document.URL.match( /new/ ) || document.URL.match( /edit/ )) {
   blobImage.setAttribute('src', blob);
 
   // 生成したHTMLの要素をブラウザに表示させる
-  imageElement.appendChild(blobImage);
+  imageElement.appendChild(blobImage).classList.add("image-size");
   ImageList.appendChild(imageElement);
 
     });
