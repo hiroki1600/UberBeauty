@@ -1,7 +1,24 @@
-.list {
-  width: 37vh;
+.main {
+  width: 100vw;
+}
+
+.item-lists {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item-index-list {
+  width: 230px;
+  height: 230px;
   padding: 1vw;
   background-color: #FFF;
+  list-style: none;
+  border: royalblue solid 2px;
+  margin: 1vh 1vw;
+  border-radius: 30px;
 }
 
 .item-img-content {
@@ -19,12 +36,34 @@
   padding: 1vw;
 }
 
+.item-index-image {
+
+}
+
 .item-name {
   font-size: 2.5vh;
 }
 
-.item-price {
-  font-size: 1.5vh;
+.images {
+  width: 130px;
+  height: 130px;
+}
+
+.item-index-price {
+  font-size: 15px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.item-nickname-follow {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.item-index-nickname {
+  
+}
+
+.item-follow {
+  margin-left: 5px;
 }

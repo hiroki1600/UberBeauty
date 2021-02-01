@@ -80,6 +80,10 @@
   resize: none;
 }
 
+.images {
+  display: flex;
+}
+
 
 /* 右、料金 */
 .right-contents {
@@ -118,4 +122,11 @@
 
 .border-bottom {
   border-top: solid 3px cyan;
+}
+
+/* 画像 */
+
+.image-size {
+  width:120px;
+  height: 120px;
 }
