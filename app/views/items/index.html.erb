@@ -9,7 +9,7 @@
             <h3 class="item-index-title">
               <%= item.name %>
             </h3>
-            <div class="ite-index-image">
+            <div class="item-index-image">
               <div id="image-list" ></div>
                 <% item.images.each do |image| %>
                 <%= image_tag image, class: 'images' %>
@@ -18,8 +18,13 @@
             <div class="item-index-price">
               <%= item.price %>円
             </div>
-            <div class="item-index-nickname">
-              <%= item.user.nickname %>
+            <div class="item-nickname-follow">
+              <div class="item-index-nickname">
+                <%= item.user.nickname %>
+              </div>
+              <div class="item-follow">
+                フォロー
+              </div>
             </div>
           <% end %>
         </li>

@@ -36,18 +36,34 @@
   padding: 1vw;
 }
 
-.item-name {
-  font-size: 2.5vh;
+.item-index-image {
+
 }
 
-.item-index-price {
-  font-size: 15px;
-  font-style: ;
-  display: flex;
-  justify-content: space-between;
+.item-name {
+  font-size: 2.5vh;
 }
 
 .images {
   width: 130px;
   height: 130px;
+}
+
+.item-index-price {
+  font-size: 15px;
+  text-align: right;
+  font-weight: 600;
+}
+
+.item-nickname-follow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item-index-nickname {
+  
+}
+
+.item-follow {
+  margin-left: 5px;
 }
