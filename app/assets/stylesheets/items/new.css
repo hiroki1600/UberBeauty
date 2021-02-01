@@ -130,3 +130,41 @@
   width:120px;
   height: 120px;
 }
+
+/* show */
+
+.item-destroy {
+  border: 2px solid #000;
+  border-radius: 0;
+  background: #fff;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+
+  padding: 5px 10px;
+}
+
+.item-destroy:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 5px;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+
+  background: #000;
+}
+
+.item-destroy:hover {
+  color: #fff;
+  background: #000;
+}
+
+.item-destroy:hover:before {
+  background: #fff;
+}
