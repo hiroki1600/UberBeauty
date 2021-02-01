@@ -13,9 +13,21 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
     if @item.valid?
       @item.save
-      redirect_to root_path
     else
       render :new
+    end
+  end
+
+  def show
+    @item = Item.find(params[:id])
+  end
+
+  def destroy
+    @item = Item.find(params[:id])
+    if current_user.id != @item.user_id 
+       redirect_to root_path
+    else
+       @item.destroy
     end
   end
 
