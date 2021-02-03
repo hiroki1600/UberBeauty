@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def show
+    @items = Item.all.order("created_at DESC")
+  end
+
   def edit
     @user = User.find(params[:id])
     if current_user.id != @user.id
