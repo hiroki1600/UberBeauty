@@ -1,0 +1,39 @@
+<%= render "shared/header" %>
+
+
+  <div calss='main'>
+    <%# アイテム一覧表示 %>
+    <ul class='item-lists'>
+      <% @items.each do |item| %>
+      <% if current_user.id == item.user_id %>
+        <li class='item-index-list'>
+          <%= link_to item_path(item.id) do %>
+            <h3 class="item-index-title">
+              <%= item.name %>
+            </h3>
+            <div class="item-index-image">
+              <div id="image-list" ></div>
+                <% item.images.each do |image| %>
+                <%= image_tag image, class: 'images' %>
+              <% end %>
+            </div>
+            <div class="item-index-price">
+              <%= item.price %>円
+            </div>
+            <div class="item-nickname-follow">
+              <div class="item-index-nickname">
+                <%= item.user.nickname %>
+              </div>
+              <div class="item-follow">
+                フォロー
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end %>
+      <% end %>
+    </ul>
+  </main>
+
+
+<%= render "shared/footer" %>
